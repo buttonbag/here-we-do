@@ -1,0 +1,193 @@
+.content-shadow {
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.14);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* general css ////////////////////////*/
+html {
+    font-size: 16px;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.arrow-btn {
+    font-size: 1.4rem;
+    vertical-align: middle;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &::before {
+        content: '';
+        display: inline-block;
+        margin-right: .5rem;
+        width: 42px;
+        height: 42px;
+        background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzEiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA3MSA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzQ5Nl82MjApIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zNS43IDBIMFY1NC4yMUMwIDY1LjA5IDguMDQgNjUuMDkgMTYuNzUgNjguMjhMMzUuNyA3NC43MkgzNS43OEw1NC42OSA2OC4yOEM2My40MSA2NS4wOCA3MS40NCA2NS4wOCA3MS40NCA1NC4yMVYwSDM1LjdaTTMwLjMgNTYuOTdDMjguOSA1Ni43NyAyNy43IDU2LjQ1IDI2LjM4IDU1Ljk3QzIxLjA2IDU0LjA5IDE2Ljk5IDUxLjM3IDEzLjE1IDQ3LjI5QzguNDMgNDIuNjEgNS45OSAzNy4wNSA1Ljc1IDMwLjQyTDUuNzEgMjcuNjZIMTQuODhWMTYuODdDMTcuODQgMTYuOTUgMTkuOTIgMTYuODcgMjIuOTUgMTcuODdDMjUuNTUgMTguNzEgMjcuNjcgMTkuNjMgMzAuMDcgMjAuOTlWNS4zMkg0MS4zMVYyMC45OUM0My45OSAxOS40MyA0Ni4zOSAxOC40MyA0OS4zNCAxNy41OUM1MS44MiAxNy4wMyA1My45NCAxNi44MyA1Ni41IDE2Ljg3VjI3LjY2SDY1LjczTDY1LjY5IDMwLjQyQzY1LjY1IDM0LjM0IDY0Ljc3IDM3LjY2IDYyLjgxIDQxLjA5QzU5LjI5IDQ3LjI1IDU0LjY1IDUxLjU2IDQ4LjI1IDU0LjY0QzQ1Ljg5IDU1Ljg0IDQzLjczIDU2LjUyIDQxLjEzIDU2LjkyVjY4Ljc1SDMwLjI5VjU2Ljk1TDMwLjMgNTYuOTdaTTUzLjI5IDI4Ljc0QzUxLjAxIDI5LjUgNDkuMTggMzAuNDIgNDcuMjUgMzEuODJDNDMuOTQgMzQuMyA0Mi4wNiAzNy42NiA0MS42NSA0MS43N0w0MS40NSA0NC4yMUM0Ni4zNiA0Mi44OSA1MS4yOSAzNy41MyA1Mi44NCAzMi42MkM1My4yIDMxLjMgNTMuMzIgMzAuMTQgNTMuMjggMjguNzRINTMuMjlaTTE4LjAzIDI4Ljc0QzE4LjExIDMwLjcgMTguMTUgMzEuODYgMTguODcgMzMuNTRDMjAuMTEgMzYuNTQgMjEuNzUgMzguODIgMjQuMTkgNDAuOThDMjUuODcgNDIuNTggMjcuNjcgNDMuNTggMjkuOTEgNDQuMjJDMjkuNzUgMzguNzQgMjcuNzEgMzMuOTEgMjIuOTkgMzEuMDNDMjEuMzEgMzAuMDcgMTkuODcgMjkuMzkgMTguMDMgMjguNzVWMjguNzRaTTMzLjAyIDU0LjQ1VjY2SDM4LjQyVjU0LjQ1QzQ3Ljk0IDU0LjQ1IDYyLjkzIDQzLjU3IDYyLjkzIDMwLjQySDU2LjAxQzU2LjAxIDM2LjE4IDQ4LjM4IDQ3LjMzIDM4LjgyIDQ3LjMzQzM3LjU4IDMxLjM0IDQ4LjM4IDI3LjQ2IDUzLjczIDI1LjdWMTkuNjZDNDguODUgMTkuNjYgNDEuNzQgMjMuNDYgMzguNTggMjYuMTRWOC4wM0gzMi43OFYyNi4xNUMyOS42MiAyMy40NyAyMi40NyAxOS42NyAxNy42MyAxOS42N1YyNS43MUMyMi45OSAyNy40NyAzMy43OCAzMS4zNSAzMi41NCA0Ny4zNEMyMi45OSA0Ny4zNCAxNS4zNSAzNi4xOSAxNS4zNSAzMC40M0g4LjQ3QzguNDcgNDMuNTggMjMuMzggNTQuNDYgMzMuMDIgNTQuNDZWNTQuNDVaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzQ5Nl82MjAiPgo8cmVjdCB3aWR0aD0iNzEiIGhlaWdodD0iNzUiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==') center/cover red;
+        vertical-align: middle;
+        transition: all .2s;
+    }
+
+    &:hover::before {
+        margin-right: .8rem;
+    }
+}
+
+.skyline {
+    background-image: url('https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/brand2/citybg.png');
+    height: 443px;
+}
+
+.row {
+    margin: 0
+}
+
+.bg-blue {
+    background: #0057b7;
+}
+
+/* end general css ////////////////////////*/
+
+
+/* content container /////////////////*/
+.content {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+}
+
+.intro .content {
+    padding: 0;
+}
+
+.hwd-stack .content {
+    padding: 5rem 0;
+}
+
+/* end content container //////////////*/
+
+/* hwd-header /////////////////////////*/
+.hwd-header {
+    font-size: 1.6rem;
+
+    span {
+        display: block;
+        font-size: 2rem;
+        line-height: 1;
+    }
+}
+
+/* end hwd-header /////////////////////////*/
+
+/* intro //////////////////////////// */
+.intro {
+    margin-bottom: 80px;
+
+    .intro-text {
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 50px auto;
+        font-size: 1.2rem;
+
+        span {
+            font-size: 150%;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: blue;
+        }
+
+        .emblem {
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background: red;
+            overflow: hidden;
+            text-align: center;
+            padding: 8px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+/* end intro //////////////////////////// */
+
+/* stat  /////////////////////////////////*/
+.stat {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+
+    p {
+        font-size: 1rem;
+    }
+
+    .stat-icon {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: red;
+        margin-right: 15px;
+    }
+
+    .stat-title {
+        font-size: 2rem;
+        line-height: 1;
+        text-transform: uppercase;
+        max-width: 400px;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+        line-height: 1;
+        margin-bottom: .5rem;
+    }
+
+}
+
+/* end stat  /////////////////////////////////*/
+
+/* here we do stack //////////////////////////*/
+.hwd-stack {
+    color: white;
+
+    .hwd-lead-in {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: right;
+        margin-right: 50px;
+        text-transform: uppercase;
+    }
+
+    .arrow-btn {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hwd-lead-in {
+        text-align: left;
+    }
+}
+
+/* end here we do stack //////////////////////////*/
