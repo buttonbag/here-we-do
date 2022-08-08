@@ -114,7 +114,7 @@ a {
             width: 100px;
             height: 100px;
             margin: 0 auto;
-            background: red;
+            background: white;
             overflow: hidden;
             text-align: center;
             padding: 8px;
@@ -177,6 +177,10 @@ a {
         text-align: right;
         margin-right: 50px;
         text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+            text-align: left;
+        }
     }
 
     .arrow-btn {
@@ -184,10 +188,5 @@ a {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .hwd-lead-in {
-        text-align: left;
-    }
-}
 
 /* end here we do stack //////////////////////////*/
