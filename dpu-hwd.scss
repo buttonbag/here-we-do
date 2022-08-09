@@ -1,6 +1,25 @@
 // test url
 $url: 'https://resources.sptest16.depaul.edu';
 
+// colors
+@function scale($color, $n: 0) {
+    $scaled: scale-color($color, $lightness: 1% * $n);
+    @return $scaled;
+}
+
+$blue: #0057b7;
+$dark-blue: #0e4174;
+$light-blue: scale($blue, 30);
+$bright-blue: scale($blue, 60);
+$blue-white: scale($blue, 90);
+$white: #fff;
+$black: #000;
+$gray: #565656;
+$dark-gray: scale($gray, -50);
+$light-gray: scale($gray, 70);
+$gray-white: scale($gray, 90);
+$red: #af272f;
+
 // fonts 
 // @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
@@ -353,18 +372,26 @@ $url: 'https://resources.sptest16.depaul.edu';
     font-size: 16px;
     font-family: 'source sans pro';
 
-    h1 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         border: none;
         text-transform: uppercase;
         font-family: 'DINPRO-Black';
+        color: $blue;
     }
 
     p {
         font-size: 1.4rem;
+        font-family: 'Source Sans Pro';
     }
 
     a {
         text-decoration: none;
+        color: $blue;
     }
 
     .arrow-btn {
@@ -386,13 +413,30 @@ $url: 'https://resources.sptest16.depaul.edu';
             margin-right: .5rem;
             width: 42px;
             height: 42px;
-            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzEiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA3MSA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzQ5Nl82MjApIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zNS43IDBIMFY1NC4yMUMwIDY1LjA5IDguMDQgNjUuMDkgMTYuNzUgNjguMjhMMzUuNyA3NC43MkgzNS43OEw1NC42OSA2OC4yOEM2My40MSA2NS4wOCA3MS40NCA2NS4wOCA3MS40NCA1NC4yMVYwSDM1LjdaTTMwLjMgNTYuOTdDMjguOSA1Ni43NyAyNy43IDU2LjQ1IDI2LjM4IDU1Ljk3QzIxLjA2IDU0LjA5IDE2Ljk5IDUxLjM3IDEzLjE1IDQ3LjI5QzguNDMgNDIuNjEgNS45OSAzNy4wNSA1Ljc1IDMwLjQyTDUuNzEgMjcuNjZIMTQuODhWMTYuODdDMTcuODQgMTYuOTUgMTkuOTIgMTYuODcgMjIuOTUgMTcuODdDMjUuNTUgMTguNzEgMjcuNjcgMTkuNjMgMzAuMDcgMjAuOTlWNS4zMkg0MS4zMVYyMC45OUM0My45OSAxOS40MyA0Ni4zOSAxOC40MyA0OS4zNCAxNy41OUM1MS44MiAxNy4wMyA1My45NCAxNi44MyA1Ni41IDE2Ljg3VjI3LjY2SDY1LjczTDY1LjY5IDMwLjQyQzY1LjY1IDM0LjM0IDY0Ljc3IDM3LjY2IDYyLjgxIDQxLjA5QzU5LjI5IDQ3LjI1IDU0LjY1IDUxLjU2IDQ4LjI1IDU0LjY0QzQ1Ljg5IDU1Ljg0IDQzLjczIDU2LjUyIDQxLjEzIDU2LjkyVjY4Ljc1SDMwLjI5VjU2Ljk1TDMwLjMgNTYuOTdaTTUzLjI5IDI4Ljc0QzUxLjAxIDI5LjUgNDkuMTggMzAuNDIgNDcuMjUgMzEuODJDNDMuOTQgMzQuMyA0Mi4wNiAzNy42NiA0MS42NSA0MS43N0w0MS40NSA0NC4yMUM0Ni4zNiA0Mi44OSA1MS4yOSAzNy41MyA1Mi44NCAzMi42MkM1My4yIDMxLjMgNTMuMzIgMzAuMTQgNTMuMjggMjguNzRINTMuMjlaTTE4LjAzIDI4Ljc0QzE4LjExIDMwLjcgMTguMTUgMzEuODYgMTguODcgMzMuNTRDMjAuMTEgMzYuNTQgMjEuNzUgMzguODIgMjQuMTkgNDAuOThDMjUuODcgNDIuNTggMjcuNjcgNDMuNTggMjkuOTEgNDQuMjJDMjkuNzUgMzguNzQgMjcuNzEgMzMuOTEgMjIuOTkgMzEuMDNDMjEuMzEgMzAuMDcgMTkuODcgMjkuMzkgMTguMDMgMjguNzVWMjguNzRaTTMzLjAyIDU0LjQ1VjY2SDM4LjQyVjU0LjQ1QzQ3Ljk0IDU0LjQ1IDYyLjkzIDQzLjU3IDYyLjkzIDMwLjQySDU2LjAxQzU2LjAxIDM2LjE4IDQ4LjM4IDQ3LjMzIDM4LjgyIDQ3LjMzQzM3LjU4IDMxLjM0IDQ4LjM4IDI3LjQ2IDUzLjczIDI1LjdWMTkuNjZDNDguODUgMTkuNjYgNDEuNzQgMjMuNDYgMzguNTggMjYuMTRWOC4wM0gzMi43OFYyNi4xNUMyOS42MiAyMy40NyAyMi40NyAxOS42NyAxNy42MyAxOS42N1YyNS43MUMyMi45OSAyNy40NyAzMy43OCAzMS4zNSAzMi41NCA0Ny4zNEMyMi45OSA0Ny4zNCAxNS4zNSAzNi4xOSAxNS4zNSAzMC40M0g4LjQ3QzguNDcgNDMuNTggMjMuMzggNTQuNDYgMzMuMDIgNTQuNDZWNTQuNDVaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzQ5Nl82MjAiPgo8cmVjdCB3aWR0aD0iNzEiIGhlaWdodD0iNzUiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==') center/cover red;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzEiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA3MSA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzQ5Nl82MjApIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zNS43IDBIMFY1NC4yMUMwIDY1LjA5IDguMDQgNjUuMDkgMTYuNzUgNjguMjhMMzUuNyA3NC43MkgzNS43OEw1NC42OSA2OC4yOEM2My40MSA2NS4wOCA3MS40NCA2NS4wOCA3MS40NCA1NC4yMVYwSDM1LjdaTTMwLjMgNTYuOTdDMjguOSA1Ni43NyAyNy43IDU2LjQ1IDI2LjM4IDU1Ljk3QzIxLjA2IDU0LjA5IDE2Ljk5IDUxLjM3IDEzLjE1IDQ3LjI5QzguNDMgNDIuNjEgNS45OSAzNy4wNSA1Ljc1IDMwLjQyTDUuNzEgMjcuNjZIMTQuODhWMTYuODdDMTcuODQgMTYuOTUgMTkuOTIgMTYuODcgMjIuOTUgMTcuODdDMjUuNTUgMTguNzEgMjcuNjcgMTkuNjMgMzAuMDcgMjAuOTlWNS4zMkg0MS4zMVYyMC45OUM0My45OSAxOS40MyA0Ni4zOSAxOC40MyA0OS4zNCAxNy41OUM1MS44MiAxNy4wMyA1My45NCAxNi44MyA1Ni41IDE2Ljg3VjI3LjY2SDY1LjczTDY1LjY5IDMwLjQyQzY1LjY1IDM0LjM0IDY0Ljc3IDM3LjY2IDYyLjgxIDQxLjA5QzU5LjI5IDQ3LjI1IDU0LjY1IDUxLjU2IDQ4LjI1IDU0LjY0QzQ1Ljg5IDU1Ljg0IDQzLjczIDU2LjUyIDQxLjEzIDU2LjkyVjY4Ljc1SDMwLjI5VjU2Ljk1TDMwLjMgNTYuOTdaTTUzLjI5IDI4Ljc0QzUxLjAxIDI5LjUgNDkuMTggMzAuNDIgNDcuMjUgMzEuODJDNDMuOTQgMzQuMyA0Mi4wNiAzNy42NiA0MS42NSA0MS43N0w0MS40NSA0NC4yMUM0Ni4zNiA0Mi44OSA1MS4yOSAzNy41MyA1Mi44NCAzMi42MkM1My4yIDMxLjMgNTMuMzIgMzAuMTQgNTMuMjggMjguNzRINTMuMjlaTTE4LjAzIDI4Ljc0QzE4LjExIDMwLjcgMTguMTUgMzEuODYgMTguODcgMzMuNTRDMjAuMTEgMzYuNTQgMjEuNzUgMzguODIgMjQuMTkgNDAuOThDMjUuODcgNDIuNTggMjcuNjcgNDMuNTggMjkuOTEgNDQuMjJDMjkuNzUgMzguNzQgMjcuNzEgMzMuOTEgMjIuOTkgMzEuMDNDMjEuMzEgMzAuMDcgMTkuODcgMjkuMzkgMTguMDMgMjguNzVWMjguNzRaTTMzLjAyIDU0LjQ1VjY2SDM4LjQyVjU0LjQ1QzQ3Ljk0IDU0LjQ1IDYyLjkzIDQzLjU3IDYyLjkzIDMwLjQySDU2LjAxQzU2LjAxIDM2LjE4IDQ4LjM4IDQ3LjMzIDM4LjgyIDQ3LjMzQzM3LjU4IDMxLjM0IDQ4LjM4IDI3LjQ2IDUzLjczIDI1LjdWMTkuNjZDNDguODUgMTkuNjYgNDEuNzQgMjMuNDYgMzguNTggMjYuMTRWOC4wM0gzMi43OFYyNi4xNUMyOS42MiAyMy40NyAyMi40NyAxOS42NyAxNy42MyAxOS42N1YyNS43MUMyMi45OSAyNy40NyAzMy43OCAzMS4zNSAzMi41NCA0Ny4zNEMyMi45OSA0Ny4zNCAxNS4zNSAzNi4xOSAxNS4zNSAzMC40M0g4LjQ3QzguNDcgNDMuNTggMjMuMzggNTQuNDYgMzMuMDIgNTQuNDZWNTQuNDVaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzQ5Nl82MjAiPgo8cmVjdCB3aWR0aD0iNzEiIGhlaWdodD0iNzUiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==') center/cover $red;
             vertical-align: middle;
             transition: all .2s;
         }
 
         &:hover::before {
             margin-right: .8rem;
+        }
+    }
+
+    .emblem {
+        left: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background: $white;
+        overflow: hidden;
+        text-align: center;
+        padding: 8px;
+
+        img {
+            width: 100%;
+            height: auto;
         }
     }
 
@@ -406,7 +450,7 @@ $url: 'https://resources.sptest16.depaul.edu';
     }
 
     .bg-blue {
-        background: #0057b7;
+        background: $blue;
     }
 
     // end general css 
@@ -441,6 +485,7 @@ $url: 'https://resources.sptest16.depaul.edu';
             font-family: 'DINPRO-Black';
             line-height: 1;
             padding-bottom: 3rem;
+            color: $blue;
 
             span {
                 display: block;
@@ -449,6 +494,9 @@ $url: 'https://resources.sptest16.depaul.edu';
             }
         }
 
+        .arrow-btn {
+            color: $blue;
+        }
     }
 
     // end hwd-header
@@ -464,32 +512,25 @@ $url: 'https://resources.sptest16.depaul.edu';
             margin: 50px auto;
             font-size: 1.2rem;
 
+            p {}
+
             span {
                 font-size: 150%;
                 font-weight: 700;
                 text-transform: uppercase;
-                color: blue;
+                color: $bright-blue;
                 font-family: 'DINPRO-Black';
                 line-height: 1;
+
+                &:nth-last-of-type(1) {
+                    position: relative;
+                    bottom: -7px;
+                }
             }
 
             .emblem {
                 position: absolute;
                 bottom: -100px;
-                left: 0;
-                right: 0;
-                width: 100px;
-                height: 100px;
-                margin: 0 auto;
-                background: white;
-                overflow: hidden;
-                text-align: center;
-                padding: 8px;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                }
             }
         }
     }
@@ -501,6 +542,8 @@ $url: 'https://resources.sptest16.depaul.edu';
         display: flex;
         align-items: flex-start;
         margin-bottom: 1rem;
+        font-family: 'DINPRO-Black';
+        color: $red;
 
         p {
             font-size: 1rem;
@@ -535,11 +578,12 @@ $url: 'https://resources.sptest16.depaul.edu';
 
     // here we do stack
     .hwd-stack {
-        color: white;
+        color: $white;
 
         .hwd-lead-in {
             font-size: 5rem;
             font-weight: 700;
+            font-family: 'DINPRO-Black';
             line-height: 1;
             text-align: right;
             margin-right: 50px;
@@ -551,23 +595,54 @@ $url: 'https://resources.sptest16.depaul.edu';
         }
 
         .arrow-btn {
-            color: white;
+            color: $white
         }
     }
 
     // end here we do stack
 
+    // forms
+    .forms {
+        margin-top: 3rem;
+
+        .cta-landing {
+            background: $red;
+            height: 57px;
+            line-height: 57px;
+            padding: 0 30px;
+            border: none;
+            display: inline-block;
+            font-size: 18px;
+            min-width: auto;
+            color: $white
+        }
+
+        .slate-form {
+            background: none;
+
+            button {
+                background: $blue;
+
+                &:hover {
+                    background: $dark-blue;
+                }
+            }
+        }
+    }
+
+    // end forms
+
     // footer 
-    .hwd-footer .col-4_sm-12 {
+    .hwd-footer .col-12 {
         padding: 0 60px !important;
     }
 
-    .hwd-footer .col-4_sm-12:nth-child(3) {
-        font-family: "DinPro-Black";
+    .hwd-footer .address {
+        font-family: "DINPRO-Black";
     }
 
     @media (max-width: 50em) {
-        .hwd-footer .col-4_sm-12 {
+        .hwd-footer .col-12 {
             text-align: center;
             padding-bottom: 30px;
         }
