@@ -1,5 +1,8 @@
+// test url
+$url: 'https://resources.sptest16.depaul.edu';
+
 // fonts 
-@charset "UTF-8";
+// @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 
 @font-face {
@@ -322,18 +325,38 @@
     font-weight: 300;
 }
 
+@font-face {
+    font-family: 'DINPro-Black';
+    src: url($url+'/here-we-do/PublishingImages/DINPro-Black.eot?#iefix') format('embedded-opentype'), url($url+'/here-we-do/PublishingImages/DINPro-Black.otf') format('opentype'),
+        url($url+'/here-we-do/PublishingImages/DINPro-Black.woff') format('woff'), url($url+'/here-we-do/PublishingImages/DINPro-Black.ttf') format('truetype'), url($url+'/here-we-do/PublishingImages/DINPro-Black.svg#DINPro-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'DINPro-Regular';
+    src: url($url+'/here-we-do/PublishingImages/DINPro-Regular.eot?#iefix') format('embedded-opentype'), url($url+'/here-we-do/PublishingImages/DINPro-Regular.otf') format('opentype'),
+        url($url+'/here-we-do/PublishingImages/DINPro-Regular.woff') format('woff'), url($url+'/here-we-do/PublishingImages/DINPro-Regular.ttf') format('truetype'), url($url+'/here-we-do/PublishingImages/DINPro-Regular.svg#DINPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .content-shadow.hwd-2 {
     box-shadow: 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.14);
     max-width: 1920px;
     margin: 0 auto;
 }
 
-// general css ///////////////////////////////////////
+// general css 
 #s4-bodyContainer #ga-maincontent .hwd-2 {
     font-size: 16px;
+    font-family: 'source sans pro';
 
     h1 {
         border: none;
+        text-transform: uppercase;
+        font-family: 'DINPRO-Black';
     }
 
     p {
@@ -346,7 +369,12 @@
 
     .arrow-btn {
         font-size: 1.4rem;
+        font-family: 'DINPRO-Regular';
         vertical-align: middle;
+
+        strong {
+            font-family: 'DINPRO-Black';
+        }
 
         &:hover {
             text-decoration: none;
@@ -381,10 +409,10 @@
         background: #0057b7;
     }
 
-    // end general css ////////////////////////
+    // end general css 
 
 
-    // content container /////////////////
+    // content container 
     .content {
         max-width: 1080px;
         margin: 0 auto;
@@ -400,22 +428,32 @@
         padding: 5rem 0;
     }
 
-    // end content container //////////////
+    // end content container 
 
-    // hwd-header /////////////////////////
+    // hwd-header
     .hwd-header {
-        font-size: 1.6rem;
-
-        span {
-            display: block;
-            font-size: 2rem;
-            line-height: 1;
+        .dpu-logo {
+            padding-bottom: 6rem;
         }
+
+        h1 {
+            font-size: 4rem;
+            font-family: 'DINPRO-Black';
+            line-height: 1;
+            padding-bottom: 3rem;
+
+            span {
+                display: block;
+                font-size: 2rem;
+                font-family: 'DINPRO-Regular';
+            }
+        }
+
     }
 
-    // end hwd-header /////////////////////////
+    // end hwd-header
 
-    // intro //////////////////////////// 
+    // intro  
     .intro {
         margin-bottom: 80px;
 
@@ -431,6 +469,8 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 color: blue;
+                font-family: 'DINPRO-Black';
+                line-height: 1;
             }
 
             .emblem {
@@ -454,9 +494,9 @@
         }
     }
 
-    // end intro //////////////////////////// 
+    // end intro  
 
-    // stat  /////////////////////////////////
+    // stat  
     .stat {
         display: flex;
         align-items: flex-start;
@@ -491,9 +531,9 @@
 
     }
 
-    // end stat  /////////////////////////////////
+    // end stat  
 
-    // here we do stack //////////////////////////
+    // here we do stack
     .hwd-stack {
         color: white;
 
@@ -515,9 +555,9 @@
         }
     }
 
-    // end here we do stack //////////////////////////
+    // end here we do stack
 
-    // footer ///////////////////////////////
+    // footer 
     .hwd-footer .col-4_sm-12 {
         padding: 0 60px !important;
     }
@@ -533,5 +573,5 @@
         }
     }
 
-    // end footer ///////////////////////////////
+    // end footer 
 }

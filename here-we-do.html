@@ -13,155 +13,220 @@
 </head>
 
 <body>
-   <div class="content-shadow hwd-2">
-      <!-- header -->
-      <div class="row flex-wrap-reverse align-items-center hwd-header">
-         <div class="col-12 col-md-6">
-            <div class="skyline"></div>
-         </div>
-         <div class="col-12 col-md-6">
-            <img src="" alt="depaul logo">
-            <h1>
-               <span>welcome to the</span>
-               tenacity of chicago.
-            </h1>
-            <a href="" class="arrow-btn">Watch the <strong>HERE, WE DO</strong> TV spot</a>
-         </div>
-      </div>
-      <!-- /header -->
-      <!-- intro-text -->
-      <div class="bg-blue intro">
-         <div class="content">
+   <div id="s4-bodyContainer">
+      <div id="ga-maincontent">
+
+
+         <div class="content-shadow hwd-2">
+            <!-- header -->
+            <div class="row flex-wrap-reverse align-items-center hwd-header">
+               <div class="col-12 col-md-6">
+                  <div class="skyline"></div>
+               </div>
+               <div class="col-12 col-md-4">
+                  <img src="" class="dpu-logo" alt="depaul logo">
+                  <h1>
+                     <span>welcome to the</span>
+                     tenacity of <br>Chicago.
+                  </h1>
+                  <a href="" class="arrow-btn">Watch the <strong>HERE, WE DO</strong> TV spot</a>
+               </div>
+            </div>
+            <!-- /header -->
+            <!-- intro-text -->
+            <div class="bg-blue intro">
+               <div class="content">
+                  <div class="row">
+                     <div class="intro-text">
+                        <p class="text-white">
+                           <span>HERE,</span><br>lorem ipsum dolor sit amet consectetur adipisicing elit.
+                           Commodi distinctio consequatur alias sequi illum vero ipsum
+                           voluptatibus exercitationem minus id molestias iste, sapiente
+                           explicabo, error placeat dignissimos nemo necessitatibus quisquam <span>
+                              WE
+                              DO.
+                           </span>
+                        </p>
+                        <div class="emblem"><img
+                              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjQuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA3MSA3NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNzEgNzU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7Y2xpcC1wYXRoOnVybCgjU1ZHSURfMDAwMDAwMDAxODYyNDM4NTk2MzYwMDkwOTAwMDAwMDg0Nzk3OTg4ODk5OTMzNTc5NjlfKTt9Cgkuc3Qxe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6IzBFNDE3NDt9Cjwvc3R5bGU+CjxnPgoJPGRlZnM+CgkJPHJlY3QgaWQ9IlNWR0lEXzFfIiB3aWR0aD0iNzEiIGhlaWdodD0iNzUiLz4KCTwvZGVmcz4KCTxjbGlwUGF0aCBpZD0iU1ZHSURfMDAwMDAxMTMzMzM0NjkxNjMxNTM5NzE5ODAwMDAwMTUwNTMzMTEyNjk1MDk3NDg2MzdfIj4KCQk8dXNlIHhsaW5rOmhyZWY9IiNTVkdJRF8xXyIgIHN0eWxlPSJvdmVyZmxvdzp2aXNpYmxlOyIvPgoJPC9jbGlwUGF0aD4KCTxnIHN0eWxlPSJjbGlwLXBhdGg6dXJsKCNTVkdJRF8wMDAwMDExMzMzMzQ2OTE2MzE1Mzk3MTk4MDAwMDAxNTA1MzMxMTI2OTUwOTc0ODYzN18pOyI+CgkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTM1LjcsMEgwdjU0LjJjMCwxMC45LDgsMTAuOSwxNi44LDE0LjFsMTksNi40aDAuMWwxOC45LTYuNGM4LjctMy4yLDE2LjgtMy4yLDE2LjgtMTQuMVYwSDM1Ljd6IE0zMC4zLDU3CgkJCWMtMS40LTAuMi0yLjYtMC41LTMuOS0xYy01LjMtMS45LTkuNC00LjYtMTMuMi04LjdDOC40LDQyLjYsNiwzNyw1LjgsMzAuNGwwLTIuOGg5LjJWMTYuOWMzLDAuMSw1LDAsOC4xLDEKCQkJYzIuNiwwLjgsNC43LDEuOCw3LjEsMy4xVjUuM2gxMS4yVjIxYzIuNy0xLjYsNS4xLTIuNiw4LTMuNGMyLjUtMC42LDQuNi0wLjgsNy4yLTAuN3YxMC44aDkuMmwwLDIuOGMwLDMuOS0wLjksNy4yLTIuOSwxMC43CgkJCWMtMy41LDYuMi04LjIsMTAuNS0xNC42LDEzLjVjLTIuNCwxLjItNC41LDEuOS03LjEsMi4zdjExLjhIMzAuM0wzMC4zLDU3TDMwLjMsNTd6IE01My4zLDI4LjdjLTIuMywwLjgtNC4xLDEuNy02LDMuMQoJCQljLTMuMywyLjUtNS4yLDUuOC01LjYsMTBsLTAuMiwyLjRjNC45LTEuMyw5LjgtNi43LDExLjQtMTEuNkM1My4yLDMxLjMsNTMuMywzMC4xLDUzLjMsMjguN0w1My4zLDI4Ljd6IE0xOCwyOC43CgkJCWMwLjEsMiwwLjEsMy4xLDAuOCw0LjhjMS4yLDMsMi45LDUuMyw1LjMsNy40YzEuNywxLjYsMy41LDIuNiw1LjcsMy4yQzI5LjgsMzguNywyNy43LDMzLjksMjMsMzFDMjEuMywzMC4xLDE5LjksMjkuNCwxOCwyOC43CgkJCUwxOCwyOC43eiBNMzMsNTQuNVY2Nmg1LjRWNTQuNWM5LjUsMCwyNC41LTEwLjksMjQuNS0yNEg1NmMwLDUuOC03LjYsMTYuOS0xNy4yLDE2LjljLTEuMi0xNiw5LjYtMTkuOSwxNC45LTIxLjZ2LTYKCQkJYy00LjksMC0xMiwzLjgtMTUuMSw2LjVWOGgtNS44djE4LjFjLTMuMi0yLjctMTAuMy02LjUtMTUuMS02LjV2NmM1LjQsMS44LDE2LjEsNS42LDE0LjksMjEuNmMtOS42LDAtMTcuMi0xMS4yLTE3LjItMTYuOUg4LjUKCQkJQzguNSw0My42LDIzLjQsNTQuNSwzMyw1NC41TDMzLDU0LjV6Ii8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg=="
+                              alt="depaul emblem" />emblem</div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+            <!-- /intro-text -->
+            <!-- stats -->
+            <div class="content">
+               <div class="row">
+                  <div class="col-12 col-lg-4 stat">
+                     <div class="stat-icon">X</div>
+                     <div class="stat-text">
+                        <div class="stat-number">518,848</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-4 stat">
+                     <div class="stat-icon">X</div>
+                     <div class="stat-text">
+                        <div class="stat-title">
+                           The nation's largest catholic university
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-4 stat">
+                     <div class="stat-icon">X</div>
+                     <div class="stat-text">
+                        <div class="stat-number">180,000</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <!-- /stats -->
+            <!-- here we do -->
+            <div class="bg-blue hwd-stack">
+               <div style="background: url('https://i.picsum.photos/id/258/1920/400.jpg?grayscale&amp;hmac=tZBYQ2vTDVqWAssc8gcCPfo3Lt0lsxYNGXgQTLzvm4U') #0057b7 center/cover;
+            background-blend-mode: soft-light;">
+                  <div class="content">
+                     <div class="row">
+                        <div class="col-md-3 hwd-lead-in">
+                           HERE
+                        </div>
+                        <div class="col-md-8 hwd-text">
+                           <p>
+                              It all starts here. In the city that works, there are magnificent miles of opportunity for
+                              those
+                              willing to imagine it, reach for it and work hard to achieve it.
+                           </p>
+                           <a class="arrow-btn" href="">See how</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div style="background: url('https://i.picsum.photos/id/580/1920/400.jpg?grayscale&hmac=Pv-Xm3eV2UwvvflOYif2trFj15ieDJz1YoGp4dVRq8g') #0057b7 center/cover;
+            background-blend-mode: soft-light;">
+                  <div class="content">
+                     <div class="row">
+                        <div class="col-md-3 hwd-lead-in">
+                           we
+                        </div>
+                        <div class="col-md-8 hwd-text">
+                           <p>
+                              It all starts here. In the city that works, there are magnificent miles of opportunity for
+                              those
+                              willing to imagine it, reach for it and work hard to achieve it.
+                           </p>
+                           <a class="arrow-btn" href="">See how</a>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div style="background: url('https://i.picsum.photos/id/819/1920/400.jpg?grayscale&hmac=nIFdvFKAc-r4dXBE-8eXkcasGqJKGVba4m9u6EhgwV8') #0057b7 center/cover;
+            background-blend-mode: soft-light;">
+                  <div class="content">
+                     <div class="row">
+                        <div class="col-md-3 hwd-lead-in">
+                           do
+                        </div>
+                        <div class="col-md-8 hwd-text">
+                           <p>
+                              It all starts here. In the city that works, there are magnificent miles of opportunity for
+                              those
+                              willing to imagine it, reach for it and work hard to achieve it.
+                           </p>
+                           <a class="arrow-btn" href="">See how</a>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- /here we do -->
+            <!-- forms -->
             <div class="row">
-               <div class="intro-text">
-                  <p class="text-white">
-                     <span>HERE,</span><br>lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Commodi distinctio consequatur alias sequi illum vero ipsum
-                     voluptatibus exercitationem minus id molestias iste, sapiente
-                     explicabo, error placeat dignissimos nemo necessitatibus quisquam <span>
-                        WE
-                        DO.
-                     </span>
-                  </p>
-                  <div class="emblem"><img
-                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjQuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA3MSA3NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNzEgNzU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7Y2xpcC1wYXRoOnVybCgjU1ZHSURfMDAwMDAwMDAxODYyNDM4NTk2MzYwMDkwOTAwMDAwMDg0Nzk3OTg4ODk5OTMzNTc5NjlfKTt9Cgkuc3Qxe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6IzBFNDE3NDt9Cjwvc3R5bGU+CjxnPgoJPGRlZnM+CgkJPHJlY3QgaWQ9IlNWR0lEXzFfIiB3aWR0aD0iNzEiIGhlaWdodD0iNzUiLz4KCTwvZGVmcz4KCTxjbGlwUGF0aCBpZD0iU1ZHSURfMDAwMDAxMTMzMzM0NjkxNjMxNTM5NzE5ODAwMDAwMTUwNTMzMTEyNjk1MDk3NDg2MzdfIj4KCQk8dXNlIHhsaW5rOmhyZWY9IiNTVkdJRF8xXyIgIHN0eWxlPSJvdmVyZmxvdzp2aXNpYmxlOyIvPgoJPC9jbGlwUGF0aD4KCTxnIHN0eWxlPSJjbGlwLXBhdGg6dXJsKCNTVkdJRF8wMDAwMDExMzMzMzQ2OTE2MzE1Mzk3MTk4MDAwMDAxNTA1MzMxMTI2OTUwOTc0ODYzN18pOyI+CgkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTM1LjcsMEgwdjU0LjJjMCwxMC45LDgsMTAuOSwxNi44LDE0LjFsMTksNi40aDAuMWwxOC45LTYuNGM4LjctMy4yLDE2LjgtMy4yLDE2LjgtMTQuMVYwSDM1Ljd6IE0zMC4zLDU3CgkJCWMtMS40LTAuMi0yLjYtMC41LTMuOS0xYy01LjMtMS45LTkuNC00LjYtMTMuMi04LjdDOC40LDQyLjYsNiwzNyw1LjgsMzAuNGwwLTIuOGg5LjJWMTYuOWMzLDAuMSw1LDAsOC4xLDEKCQkJYzIuNiwwLjgsNC43LDEuOCw3LjEsMy4xVjUuM2gxMS4yVjIxYzIuNy0xLjYsNS4xLTIuNiw4LTMuNGMyLjUtMC42LDQuNi0wLjgsNy4yLTAuN3YxMC44aDkuMmwwLDIuOGMwLDMuOS0wLjksNy4yLTIuOSwxMC43CgkJCWMtMy41LDYuMi04LjIsMTAuNS0xNC42LDEzLjVjLTIuNCwxLjItNC41LDEuOS03LjEsMi4zdjExLjhIMzAuM0wzMC4zLDU3TDMwLjMsNTd6IE01My4zLDI4LjdjLTIuMywwLjgtNC4xLDEuNy02LDMuMQoJCQljLTMuMywyLjUtNS4yLDUuOC01LjYsMTBsLTAuMiwyLjRjNC45LTEuMyw5LjgtNi43LDExLjQtMTEuNkM1My4yLDMxLjMsNTMuMywzMC4xLDUzLjMsMjguN0w1My4zLDI4Ljd6IE0xOCwyOC43CgkJCWMwLjEsMiwwLjEsMy4xLDAuOCw0LjhjMS4yLDMsMi45LDUuMyw1LjMsNy40YzEuNywxLjYsMy41LDIuNiw1LjcsMy4yQzI5LjgsMzguNywyNy43LDMzLjksMjMsMzFDMjEuMywzMC4xLDE5LjksMjkuNCwxOCwyOC43CgkJCUwxOCwyOC43eiBNMzMsNTQuNVY2Nmg1LjRWNTQuNWM5LjUsMCwyNC41LTEwLjksMjQuNS0yNEg1NmMwLDUuOC03LjYsMTYuOS0xNy4yLDE2LjljLTEuMi0xNiw5LjYtMTkuOSwxNC45LTIxLjZ2LTYKCQkJYy00LjksMC0xMiwzLjgtMTUuMSw2LjVWOGgtNS44djE4LjFjLTMuMi0yLjctMTAuMy02LjUtMTUuMS02LjV2NmM1LjQsMS44LDE2LjEsNS42LDE0LjksMjEuNmMtOS42LDAtMTcuMi0xMS4yLTE3LjItMTYuOUg4LjUKCQkJQzguNSw0My42LDIzLjQsNTQuNSwzMyw1NC41TDMzLDU0LjV6Ii8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg=="
-                        alt="depaul emblem" />emblem</div>
-               </div>
-            </div>
-
-         </div>
-      </div>
-      <!-- /intro-text -->
-      <!-- stats -->
-      <div class="content">
-         <div class="row">
-            <div class="col-12 col-lg-4 stat">
-               <div class="stat-icon">X</div>
-               <div class="stat-text">
-                  <div class="stat-number">518,848</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-               </div>
-            </div>
-            <div class="col-12 col-lg-4 stat">
-               <div class="stat-icon">X</div>
-               <div class="stat-text">
-                  <div class="stat-title">
-                     The nation's largest catholic university
-                  </div>
-               </div>
-            </div>
-            <div class="col-12 col-lg-4 stat">
-               <div class="stat-icon">X</div>
-               <div class="stat-text">
-                  <div class="stat-number">180,000</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-               </div>
-            </div>
-
-         </div>
-      </div>
-
-      <!-- /stats -->
-      <!-- here we do -->
-      <div class="bg-blue hwd-stack">
-         <div style="background: url('https://i.picsum.photos/id/258/1920/400.jpg?grayscale&amp;hmac=tZBYQ2vTDVqWAssc8gcCPfo3Lt0lsxYNGXgQTLzvm4U') #0057b7 center/cover;
-            background-blend-mode: soft-light;">
-            <div class="content">
-               <div class="row">
-                  <div class="col-md-3 hwd-lead-in">
-                     HERE
-                  </div>
-                  <div class="col-md-8 hwd-text">
-                     <p>
-                        It all starts here. In the city that works, there are magnificent miles of opportunity for those
-                        willing to imagine it, reach for it and work hard to achieve it.
+               <div class="content">
+                  <div class="col text-center">
+                     <h3>HERE, WE DO.</h3>
+                     <p class="text-center">
+                        <a href="">Link</a> |
+                        <a href="">Link</a> |
+                        <a href="">Link</a> |
+                        <a href="">Link</a>
                      </p>
-                     <a class="arrow-btn" href="">See how</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div style="background: url('https://i.picsum.photos/id/580/1920/400.jpg?grayscale&hmac=Pv-Xm3eV2UwvvflOYif2trFj15ieDJz1YoGp4dVRq8g') #0057b7 center/cover;
-            background-blend-mode: soft-light;">
-            <div class="content">
-               <div class="row">
-                  <div class="col-md-3 hwd-lead-in">
-                     we
-                  </div>
-                  <div class="col-md-8 hwd-text">
-                     <p>
-                        It all starts here. In the city that works, there are magnificent miles of opportunity for those
-                        willing to imagine it, reach for it and work hard to achieve it.
-                     </p>
-                     <a class="arrow-btn" href="">See how</a>
-                  </div>
 
-               </div>
-            </div>
-         </div>
-         <div style="background: url('https://i.picsum.photos/id/819/1920/400.jpg?grayscale&hmac=nIFdvFKAc-r4dXBE-8eXkcasGqJKGVba4m9u6EhgwV8') #0057b7 center/cover;
-            background-blend-mode: soft-light;">
-            <div class="content">
-               <div class="row">
-                  <div class="col-md-3 hwd-lead-in">
-                     do
-                  </div>
-                  <div class="col-md-8 hwd-text">
-                     <p>
-                        It all starts here. In the city that works, there are magnificent miles of opportunity for those
-                        willing to imagine it, reach for it and work hard to achieve it.
+                     <div>social share</div>
+                     <p class="text-center">
+                        Interested in learning more about our undergraduate or graduate
+                        degree programs? Start here.
                      </p>
-                     <a class="arrow-btn" href="">See how</a>
+                     embed webpart
                   </div>
+               </div>
+               <div class="skyline">&nbsp;</div>
+            </div>
+            <!-- /forms -->
 
+            <!-- footer -->
+            <div class="hwd-footer">
+               <div class="container-1920 p50-t p50-b bg-cover m0-b bg-blue">
+                  <div class="container-1200 m0-b">
+                     <div class="row">
+                        <div class="col-12 text-center">
+                           <img src="/here-we-do/PublishingImages/logo.png" class="w100" alt=""
+                              style="max-width: 350px;"> &nbsp;
+                        </div>
+                        <div class="col-12 col-sm-4 text-center">
+                           <p class="m0-a text-white">
+                              <a class="text-white" href="https://www.depaul.edu/apply/Pages/default.aspx"
+                                 data-area="footer">Apply</a><br><a class="text-white"
+                                 href="https://www.depaul.edu/admission-and-aid/Pages/request-info.aspx"
+                                 data-area="footer">Request Info</a><br><a class="text-white"
+                                 href="https://www.depaul.edu/admission-and-aid/visit-depaul/Pages/default.aspx"
+                                 data-area="footer">Visit Campus</a><br><a class="text-white"
+                                 href="https://directory.depaul.edu/" data-area="footer">Directory</a>
+                           </p>
+                           <br>
+                           <br>
+                        </div>
+                        <div class="col-12 col-sm-4 text-center">
+                           <p class="m0-a text-white"> 1 E. Jackson Blvd.<br> Chicago, IL 60604<br> (312)
+                              362-8000<br><br></p>
+                        </div>
+                        <div class="col-12 col-sm-4 text-center">
+                           <p class="m0-a text-white">
+                              <a class="text-white" href="https://library.depaul.edu/Pages/default.aspx"
+                                 data-area="footer">Library</a><br><a class="text-white"
+                                 href="http://www.depaulbluedemons.com/" data-area="footer">Athletics</a><br><a
+                                 class="text-white" href="https://www.depaul.edu/Pages/employment-at-depaul.aspx"
+                                 data-area="footer">Careers</a><br><a class="text-white"
+                                 href="https://events.depaul.edu/" data-area="footer">Events</a><br><br>
+                           </p>
+                        </div>
+                        <div class="col-12 text-center p0-b">
+                           <a href="https://www.facebook.com/DePaulUniversity/"><img
+                                 src="/here-we-do/PublishingImages/facebook-icon.png" alt=""
+                                 style="max-width: 64px;"></a><a href="https://www.instagram.com/depaulu/?hl=en"><img
+                                 src="/here-we-do/PublishingImages/instagram-icon.png" alt=""
+                                 style="max-width: 64px;"></a><a href="https://twitter.com/DePaulU"><img
+                                 src="/here-we-do/PublishingImages/twitter-icon.png" alt=""
+                                 style="max-width: 64px;"></a> &nbsp;
+                        </div>
+                        <div class="col-12">
+                           <div class="float-right">
+                              <a class="text-white small" href="/here-we-do/_layouts/authenticate.aspx">Editor Login</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
+            <!-- end footer -->
          </div>
       </div>
-      <!-- /here we do -->
-      <!-- forms -->
-      <div class="row">
-         <div class="content">
-            <div class="col text-center">
-               <h3>HERE, WE DO.</h3>
-               <p class="text-center">
-                  <a href="">Link</a> |
-                  <a href="">Link</a> |
-                  <a href="">Link</a> |
-                  <a href="">Link</a>
-               </p>
-
-               <div>social share</div>
-               <p class="text-center">
-                  Interested in learning more about our undergraduate or graduate
-                  degree programs? Start here.
-               </p>
-               embed webpart
-            </div>
-         </div>
-         <div class="skyline">&nbsp;</div>
-      </div>
-      <!-- /forms -->
    </div>
 </body>
 
