@@ -392,7 +392,7 @@
   }
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .dpu-logo {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   width: 300px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline {
@@ -462,15 +462,14 @@
   font-size: 1rem;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-icon {
-  width: 80px;
-  height: 80px;
+  width: 100px;
   margin-right: 15px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-icon img {
   width: 100%;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-title {
-  font-size: 2rem;
+  font-size: 1.9rem;
   line-height: 1;
   text-transform: uppercase;
   max-width: 400px;
