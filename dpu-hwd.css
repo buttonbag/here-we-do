@@ -333,15 +333,18 @@
 #s4-bodyContainer #ga-maincontent .hwd-2 .arrow-btn::before {
   content: "";
   display: inline-block;
-  margin-right: 0.5rem;
-  width: 42px;
-  height: 42px;
-  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzEiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA3MSA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzQ5Nl82MjApIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zNS43IDBIMFY1NC4yMUMwIDY1LjA5IDguMDQgNjUuMDkgMTYuNzUgNjguMjhMMzUuNyA3NC43MkgzNS43OEw1NC42OSA2OC4yOEM2My40MSA2NS4wOCA3MS40NCA2NS4wOCA3MS40NCA1NC4yMVYwSDM1LjdaTTMwLjMgNTYuOTdDMjguOSA1Ni43NyAyNy43IDU2LjQ1IDI2LjM4IDU1Ljk3QzIxLjA2IDU0LjA5IDE2Ljk5IDUxLjM3IDEzLjE1IDQ3LjI5QzguNDMgNDIuNjEgNS45OSAzNy4wNSA1Ljc1IDMwLjQyTDUuNzEgMjcuNjZIMTQuODhWMTYuODdDMTcuODQgMTYuOTUgMTkuOTIgMTYuODcgMjIuOTUgMTcuODdDMjUuNTUgMTguNzEgMjcuNjcgMTkuNjMgMzAuMDcgMjAuOTlWNS4zMkg0MS4zMVYyMC45OUM0My45OSAxOS40MyA0Ni4zOSAxOC40MyA0OS4zNCAxNy41OUM1MS44MiAxNy4wMyA1My45NCAxNi44MyA1Ni41IDE2Ljg3VjI3LjY2SDY1LjczTDY1LjY5IDMwLjQyQzY1LjY1IDM0LjM0IDY0Ljc3IDM3LjY2IDYyLjgxIDQxLjA5QzU5LjI5IDQ3LjI1IDU0LjY1IDUxLjU2IDQ4LjI1IDU0LjY0QzQ1Ljg5IDU1Ljg0IDQzLjczIDU2LjUyIDQxLjEzIDU2LjkyVjY4Ljc1SDMwLjI5VjU2Ljk1TDMwLjMgNTYuOTdaTTUzLjI5IDI4Ljc0QzUxLjAxIDI5LjUgNDkuMTggMzAuNDIgNDcuMjUgMzEuODJDNDMuOTQgMzQuMyA0Mi4wNiAzNy42NiA0MS42NSA0MS43N0w0MS40NSA0NC4yMUM0Ni4zNiA0Mi44OSA1MS4yOSAzNy41MyA1Mi44NCAzMi42MkM1My4yIDMxLjMgNTMuMzIgMzAuMTQgNTMuMjggMjguNzRINTMuMjlaTTE4LjAzIDI4Ljc0QzE4LjExIDMwLjcgMTguMTUgMzEuODYgMTguODcgMzMuNTRDMjAuMTEgMzYuNTQgMjEuNzUgMzguODIgMjQuMTkgNDAuOThDMjUuODcgNDIuNTggMjcuNjcgNDMuNTggMjkuOTEgNDQuMjJDMjkuNzUgMzguNzQgMjcuNzEgMzMuOTEgMjIuOTkgMzEuMDNDMjEuMzEgMzAuMDcgMTkuODcgMjkuMzkgMTguMDMgMjguNzVWMjguNzRaTTMzLjAyIDU0LjQ1VjY2SDM4LjQyVjU0LjQ1QzQ3Ljk0IDU0LjQ1IDYyLjkzIDQzLjU3IDYyLjkzIDMwLjQySDU2LjAxQzU2LjAxIDM2LjE4IDQ4LjM4IDQ3LjMzIDM4LjgyIDQ3LjMzQzM3LjU4IDMxLjM0IDQ4LjM4IDI3LjQ2IDUzLjczIDI1LjdWMTkuNjZDNDguODUgMTkuNjYgNDEuNzQgMjMuNDYgMzguNTggMjYuMTRWOC4wM0gzMi43OFYyNi4xNUMyOS42MiAyMy40NyAyMi40NyAxOS42NyAxNy42MyAxOS42N1YyNS43MUMyMi45OSAyNy40NyAzMy43OCAzMS4zNSAzMi41NCA0Ny4zNEMyMi45OSA0Ny4zNCAxNS4zNSAzNi4xOSAxNS4zNSAzMC40M0g4LjQ3QzguNDcgNDMuNTggMjMuMzggNTQuNDYgMzMuMDIgNTQuNDZWNTQuNDVaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzQ5Nl82MjAiPgo8cmVjdCB3aWR0aD0iNzEiIGhlaWdodD0iNzUiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==") center/cover #af272f;
+  margin-right: 0.8rem;
+  width: 36px;
+  height: 36px;
+  background: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/arrow.png") center/cover;
   vertical-align: middle;
   transition: all 0.2s;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .arrow-btn:hover::before {
-  margin-right: 0.8rem;
+  margin-right: 1rem;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .bg-texture {
+  background-image: url("https://resources.depaul.edu/here-we-do/PublishingImages/paper_texture.jpg") !important;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .emblem {
   left: 0;
@@ -349,7 +352,6 @@
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  background: #fff;
   overflow: hidden;
   text-align: center;
   padding: 8px;
@@ -360,6 +362,7 @@
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .skyline {
   background-image: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/brand2/citybg.png");
+  width: 100%;
   height: 443px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .row {
@@ -380,8 +383,29 @@
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-stack .content {
   padding: 5rem 0;
 }
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .offset {
+  margin-left: 5%;
+}
+@media screen and (max-width: 768px) {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .offset {
+    margin-left: 0;
+  }
+}
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .dpu-logo {
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
+  width: 300px;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline {
+  margin: 0 -15px;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .blue-person {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: 350px;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .blue-person:nth-child(2) {
+  right: 200px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header h1 {
   font-size: 4rem;
@@ -398,8 +422,8 @@
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .arrow-btn {
   color: #0057b7;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .intro {
-  margin-bottom: 80px;
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .arrow-btn:before {
+  background: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/arrowblue.png") center/cover;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .intro .intro-text {
   position: relative;
@@ -424,32 +448,34 @@
   position: absolute;
   bottom: -100px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .stat {
+#s4-bodyContainer #ga-maincontent .hwd-2 .stats-container {
+  padding-top: 80px;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat {
   display: flex;
   align-items: flex-start;
   margin-bottom: 1rem;
   font-family: "DINPRO-Black";
   color: #af272f;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .stat p {
+#s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat p {
   font-size: 1rem;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .stat .stat-icon {
+#s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-icon {
   width: 80px;
   height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: red;
   margin-right: 15px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .stat .stat-title {
+#s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-icon img {
+  width: 100%;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-title {
   font-size: 2rem;
   line-height: 1;
   text-transform: uppercase;
   max-width: 400px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .stat .stat-number {
+#s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-number {
   font-size: 3rem;
   line-height: 1;
   margin-bottom: 0.5rem;
@@ -471,11 +497,17 @@
     text-align: left;
   }
 }
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-stack p {
+  padding-bottom: 2rem;
+}
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-stack .arrow-btn {
-  color: #fff;
+  color: #fff !important;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .forms {
-  margin-top: 3rem;
+  padding-top: 3rem;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .content {
+  z-index: 99;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .forms .cta-landing {
   background: #af272f;
@@ -486,28 +518,63 @@
   display: inline-block;
   font-size: 18px;
   min-width: auto;
-  color: #fff;
+  color: #fff !important;
+  margin: 0.3em 0.2em;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form {
   background: none;
+  font-size: 2rem;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form input:not([type=checkbox]),
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form textarea,
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form select {
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  padding: 11px 12px 10px;
+  background-color: #eff3fc;
+  color: #333;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form button {
   background: #0057b7;
+  margin: 15px 0 0 0 !important;
+  padding: 15px !important;
+  border: none !important;
+  width: 100% !important;
+  display: block !important;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form button:hover {
   background: #0e4174;
 }
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline {
+  position: relative;
+  margin-top: -200px;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .blue-person {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: 350px;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .blue-person:nth-child(2) {
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline {
+    margin-top: 0;
+  }
+}
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-footer .col-12 {
   padding: 0 60px !important;
-}
-#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-footer .address {
-  font-family: "DINPRO-Black";
 }
 @media (max-width: 50em) {
   #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-footer .col-12 {
     text-align: center;
     padding-bottom: 30px;
   }
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-footer .address {
+  font-family: "DINPRO-Black";
 }
 
 /*# sourceMappingURL=dpu-hwd.css.map */
