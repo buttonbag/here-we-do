@@ -483,6 +483,15 @@
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-stack {
   color: #fff;
 }
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-stack .here {
+  background: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/here2.jpg") center/cover;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-stack .we {
+  background: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/we2.jpg") center/cover;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-stack .do {
+  background: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/do2.jpg") center/cover;
+}
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-stack .hwd-lead-in {
   font-size: 5rem;
   font-weight: 700;

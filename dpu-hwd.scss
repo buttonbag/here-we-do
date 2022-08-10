@@ -614,6 +614,18 @@ $red: #af272f;
     .hwd-stack {
         color: $white;
 
+        .here {
+            background: url('https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/here2.jpg') center/cover;
+        }
+
+        .we {
+            background: url('https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/we2.jpg') center/cover;
+        }
+
+        .do {
+            background: url('https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/do2.jpg') center/cover;
+        }
+
         .hwd-lead-in {
             font-size: 5rem;
             font-weight: 700;
