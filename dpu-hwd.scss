@@ -430,12 +430,12 @@ $red: #af272f;
     .emblem {
         left: 0;
         right: 0;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         margin: 0 auto;
         overflow: hidden;
         text-align: center;
-        padding: 8px;
+        padding: 6px;
 
         img {
             width: 100%;
@@ -496,7 +496,7 @@ $red: #af272f;
         .skyline {
             margin: 0 -15px;
 
-            .blue-person {
+            .avatar {
                 position: absolute;
                 right: 0;
                 bottom: 0;
@@ -693,7 +693,7 @@ $red: #af272f;
             position: relative;
             margin-top: -200px;
 
-            .blue-person {
+            .avatar {
                 position: absolute;
                 right: 0;
                 bottom: 0;

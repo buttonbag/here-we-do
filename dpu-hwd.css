@@ -349,12 +349,12 @@
 #s4-bodyContainer #ga-maincontent .hwd-2 .emblem {
   left: 0;
   right: 0;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
-  padding: 8px;
+  padding: 6px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .emblem img {
   width: 100%;
@@ -398,13 +398,13 @@
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline {
   margin: 0 -15px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .blue-person {
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .avatar {
   position: absolute;
   right: 0;
   bottom: 0;
   max-height: 350px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .blue-person:nth-child(2) {
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .avatar:nth-child(2) {
   right: 200px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header h1 {
@@ -550,13 +550,13 @@
   position: relative;
   margin-top: -200px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .blue-person {
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar {
   position: absolute;
   right: 0;
   bottom: 0;
   max-height: 350px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .blue-person:nth-child(2) {
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar:nth-child(2) {
   left: 0;
 }
 @media screen and (max-width: 768px) {
