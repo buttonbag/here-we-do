@@ -485,9 +485,13 @@
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-icon {
   margin-right: 15px;
+  width: 25%;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-icon img {
   width: 100px;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-text {
+  width: 75%;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-title {
   font-size: 1.9rem;

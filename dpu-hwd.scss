@@ -611,10 +611,15 @@ $red: #af272f;
 
             .stat-icon {
                 margin-right: 15px;
+                width: 25%;
 
                 img {
                     width: 100px;
                 }
+            }
+
+            .stat-text {
+                width: 75%;
             }
 
             .stat-title {
