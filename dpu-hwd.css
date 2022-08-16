@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 @font-face {
+  font-family: "DINPro-Black";
+  src: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/DINPro-Black.eot?#iefix") format("embedded-opentype"), url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/DINPro-Black.otf") format("opentype"), url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/DINPro-Black.woff") format("woff"), url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/DINPro-Black.ttf") format("truetype"), url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/DINPro-Black.svg#DINPro-Black") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DINPro-Regular";
+  src: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/DINPro-Regular.eot?#iefix") format("embedded-opentype"), url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/DINPro-Regular.otf") format("opentype"), url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/DINPro-Regular.woff") format("woff"), url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/DINPro-Regular.ttf") format("truetype"), url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/DINPro-Regular.svg#DINPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Open Sans Condensed";
   font-style: normal;
   font-weight: 300;
@@ -344,7 +356,7 @@
   margin-right: 1rem;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .bg-texture {
-  background-image: url("https://resources.depaul.edu/here-we-do/PublishingImages/paper_texture.jpg") !important;
+  background: url("https://resources.depaul.edu/here-we-do/PublishingImages/paper_texture.jpg") center/cover;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .emblem {
   left: 0;
@@ -361,8 +373,8 @@
   height: auto;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .skyline {
-  background-image: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/brand2/citybg.png");
-  width: 100%;
+  position: relative;
+  overflow: hidden;
   height: 443px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .row {
@@ -392,20 +404,24 @@
   }
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .dpu-logo {
-  padding-bottom: 2rem;
   width: 300px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline {
   margin: 0 -15px;
+  background-image: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/skyline.png");
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .train {
+  position: absolute;
+  bottom: 0;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .avatar {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  max-height: 350px;
+  right: -50px;
+  bottom: -100px;
+  max-height: 550px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .avatar:nth-child(2) {
-  right: 200px;
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .avatar ~ .avatar {
+  right: 90px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header h1 {
   font-size: 4rem;
@@ -418,6 +434,11 @@
   display: block;
   font-size: 2rem;
   font-family: "DINPRO-Regular";
+}
+@media screen and (max-width: 414px) {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header h1 {
+    font-size: 3rem;
+  }
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .arrow-btn {
   color: #0057b7;
@@ -443,6 +464,7 @@
 #s4-bodyContainer #ga-maincontent .hwd-2 .intro .intro-text span:nth-last-of-type(1) {
   position: relative;
   bottom: -7px;
+  line-height: 0;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .intro .intro-text .emblem {
   position: absolute;
@@ -462,11 +484,10 @@
   font-size: 1rem;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-icon {
-  width: 100px;
   margin-right: 15px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-icon img {
-  width: 100%;
+  width: 100px;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .stats-container .stat .stat-title {
   font-size: 1.9rem;
@@ -517,6 +538,26 @@
 #s4-bodyContainer #ga-maincontent .hwd-2 .forms .content {
   z-index: 99;
 }
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .content .social-share {
+  border: 1px solid #0057b7;
+  width: 250px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .content .social-share-title {
+  background: #0057b7;
+  color: white;
+  font-family: "DINPRO-Black";
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .content .social-share-links {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
 #s4-bodyContainer #ga-maincontent .hwd-2 .forms .cta-landing {
   background: #af272f;
   height: 57px;
@@ -529,13 +570,12 @@
   color: #fff !important;
   margin: 0.3em 0.2em;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form {
-  background: none;
-  font-size: 2rem;
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .form_pages {
+  font-size: 1.5rem;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form input:not([type=checkbox]),
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form textarea,
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form select {
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .form_pages input:not([type=checkbox]),
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .form_pages textarea,
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .form_pages select {
   width: 100%;
   margin-bottom: 15px;
   border: none;
@@ -543,37 +583,57 @@
   background-color: #eff3fc;
   color: #333;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form button {
-  background: #0057b7;
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms button {
+  background: #af272f;
+  color: #fff;
+  font-size: 1.5rem;
   margin: 15px 0 0 0 !important;
   padding: 15px !important;
   border: none !important;
   width: 100% !important;
   display: block !important;
+  transition: all 0.2s ease;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .slate-form button:hover {
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms button:hover {
   background: #0e4174;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline {
+  background: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/brand2/citybg.png") center/cover;
   position: relative;
   margin-top: -200px;
+  overflow: hidden;
+  width: 100%;
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar {
   position: absolute;
   right: 0;
-  bottom: 0;
-  max-height: 350px;
+  bottom: -100px;
+  max-height: 550px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar:nth-child(2) {
+@media screen and (max-width: 768px) {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar ~ .avatar {
   left: 0;
+}
+@media screen and (max-width: 768px) {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar ~ .avatar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1080px) {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline {
+    margin-top: -100px;
+  }
 }
 @media screen and (max-width: 768px) {
   #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline {
     margin-top: 0;
   }
-}
-#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-footer .col-12 {
-  padding: 0 60px !important;
 }
 @media (max-width: 50em) {
   #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-footer .col-12 {
