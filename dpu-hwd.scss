@@ -460,12 +460,6 @@ $red: #af272f;
         }
     }
 
-    .skyline {
-        position: relative;
-        overflow: hidden;
-        height: 443px;
-    }
-
     .row {
         margin: 0;
     }
@@ -509,9 +503,13 @@ $red: #af272f;
             width: 300px;
         }
 
-        .skyline {
+        .skyline-1 {
             margin: 0 -15px;
-            background-image: url($url+'/here-we-do/PublishingImages/skyline.png');
+            background: url($url+'/here-we-do/PublishingImages/skyline.png') center/cover no-repeat;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+
 
             .train {
                 position: absolute;
@@ -527,6 +525,10 @@ $red: #af272f;
                 &~.avatar {
                     right: 90px;
                 }
+            }
+
+            @media screen and (max-width: 768px) {
+                margin-top: -200px;
             }
         }
 
@@ -757,12 +759,13 @@ $red: #af272f;
             }
         }
 
-        .skyline {
+        .skyline-2 {
             background: url($url+'/here-we-do/PublishingImages/brand2/citybg.png') center/cover;
             position: relative;
             margin-top: -200px;
             overflow: hidden;
             width: 100%;
+            height: 443px;
 
             .avatar {
                 position: absolute;

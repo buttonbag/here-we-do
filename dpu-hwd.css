@@ -372,11 +372,6 @@
   width: 100%;
   height: auto;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .skyline {
-  position: relative;
-  overflow: hidden;
-  height: 443px;
-}
 #s4-bodyContainer #ga-maincontent .hwd-2 .row {
   margin: 0;
 }
@@ -406,22 +401,30 @@
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .dpu-logo {
   width: 300px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline {
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline-1 {
   margin: 0 -15px;
-  background-image: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/skyline.png");
+  background: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/skyline.png") center/cover no-repeat;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .train {
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline-1 .train {
   position: absolute;
   bottom: 0;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .avatar {
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline-1 .avatar {
   position: absolute;
   right: -50px;
   bottom: -100px;
   max-height: 550px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline .avatar ~ .avatar {
+#s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline-1 .avatar ~ .avatar {
   right: 90px;
+}
+@media screen and (max-width: 768px) {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header .skyline-1 {
+    margin-top: -200px;
+  }
 }
 #s4-bodyContainer #ga-maincontent .hwd-2 .hwd-header h1 {
   font-size: 4rem;
@@ -601,41 +604,42 @@
 #s4-bodyContainer #ga-maincontent .hwd-2 .forms button:hover {
   background: #0e4174;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline {
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline-2 {
   background: url("https://resources.sptest16.depaul.edu/here-we-do/PublishingImages/brand2/citybg.png") center/cover;
   position: relative;
   margin-top: -200px;
   overflow: hidden;
   width: 100%;
+  height: 443px;
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar {
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline-2 .avatar {
   position: absolute;
   right: 0;
   bottom: -100px;
   max-height: 550px;
 }
 @media screen and (max-width: 768px) {
-  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline-2 .avatar {
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 }
-#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar ~ .avatar {
+#s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline-2 .avatar ~ .avatar {
   left: 0;
 }
 @media screen and (max-width: 768px) {
-  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline .avatar ~ .avatar {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline-2 .avatar ~ .avatar {
     display: none;
   }
 }
 @media screen and (max-width: 1080px) {
-  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline-2 {
     margin-top: -100px;
   }
 }
 @media screen and (max-width: 768px) {
-  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline {
+  #s4-bodyContainer #ga-maincontent .hwd-2 .forms .skyline-2 {
     margin-top: 0;
   }
 }
