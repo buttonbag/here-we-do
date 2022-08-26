@@ -1,5 +1,6 @@
 // test url
-$url: 'https://resources.sptest16.depaul.edu';
+// $url: 'https://resources.sptest16.depaul.edu';
+$url: '';
 
 // colors
 @function scale($color, $n: 0) {
@@ -399,10 +400,6 @@ html {
         padding: 0 15px;
     }
 
-    [class$='-3'] {
-        max-width: 25%;
-    }
-
     h1,
     h2,
     h3,
@@ -434,6 +431,7 @@ html {
         font-size: 1.4rem;
         font-family: 'DINPRO-Regular';
         vertical-align: middle;
+        cursor: pointer;
 
         strong {
             font-family: 'DINPRO-Black';
@@ -452,6 +450,10 @@ html {
             background: url($url+'/here-we-do/PublishingImages/arrow.png') center/cover;
             vertical-align: middle;
             transition: all .2s;
+        }
+
+        &.active::before {
+            transform: rotate(90deg);
         }
 
         &:hover::before {
@@ -519,7 +521,7 @@ html {
         }
 
         .dpu-logo {
-            width: 350px;
+            width: 400px;
             padding: 3rem 0;
 
             @media screen and (max-width:414px) {
@@ -531,7 +533,7 @@ html {
         .skyline-1 {
             margin: 0 -15px;
             background: url($url+'/here-we-do/PublishingImages/skyline.png') left/80% no-repeat;
-            height: 600px;
+            height: 500px;
             position: relative;
             overflow: hidden;
 
@@ -553,8 +555,8 @@ html {
             }
 
             @media screen and (max-width: 768px) {
-                background: url($url+'/here-we-do/PublishingImages/skyline.png') center/cover no-repeat;
                 margin-top: -200px;
+                height: 600px;
             }
         }
 
@@ -744,6 +746,10 @@ html {
 
         .content {
             z-index: 99;
+
+            .emblem {
+                margin-top: 20px;
+            }
 
             .social-share {
                 border: 1px solid #0057b7;
